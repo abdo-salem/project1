@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+    font:15px/1.5 sans-serif,arial,helvetica;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background-color: #e8491d;
+    border: 0;
+    padding: 0 20px 0 20px;
+    color: #fff;
+}
+
+.dark{
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fff;
+    background: #35424a;
+}
+
+/*-------------- header ------------*/
+header{
+    background-color: #35424a;
+    color: #FFF;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #CCC;
+    font-weight: bold;
+}
+
+/*---------- showcase ---------*/
+
+#showcase{
+    min-height: 400px;
+    background-image: url('../images/pexels-photo-326424.jpeg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #FFF;
+    text-align: center;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+
+/*----------- newsletter -------------*/
+
+#newsletter{
+    padding: 15px;
+    color: #fff;
+    background: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+
+/*------------ boxes -------------*/
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+}
+
+#boxes .box img{
+    width:90px;
+}
+
+/*----------- article ------------*/
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/*---------- aside ---------*/
+
+aside#sidebar{
+    margin-top: 10px;
+    width: 30%;
+    float:right;
+}
+
+aside#sidebar .quote input , aside#sidebar .quote textarea{
+    width:90%;
+    padding: 5px;
+}
+
+/*--------- services ----------*/
+
+ul#service li{
+    list-style: none;
+    padding: 20px;
+    border: #ccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6; 
+}
+
+/*-------- footer ---------*/
+
+footer{
+    padding:20px ;
+    margin-top: 20px;
+    text-align: center;
+    background-color:#e8491d ;
+    color:#fff;
+}
+
+/*---------- Media --------*/
+
+@media(max-width:767px){
+    
+    header{
+        padding-bottom: 20px;
+    }
+    
+    header #branding,
+    article#main-col,
+    aside#sidebar,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #newsletter button ,.quote button{
+        display: block;
+        width: 100%;
+    }
+    
+    #newsletter form input[type="email"] , aside#sidebar .quote input, aside#sidebar .quote textarea{
+        width: 100%;
+        margin-bottom:5px; 
+    }
+    
+    #showcase h1{
+        margin-top: 40px;
+    }
+    aside#sidebar .quote input , aside#sidebar .quote textarea {
+    width:95% !important;
+    }
+    article#main-col ul{
+        margin-right: 45px !important;
+    }
+    article#main-col h1{
+        margin-right: 25px !important;
+    }
+    aside#sidebar .quote button{
+        width: 98% !important;
+        margin-left: 4px !important
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    #newsletter form{
+    float: left !important;
+    margin-bottom: 10px    
+    }
+}
+
+@media(min-width:992px){
+    
+}
+
+@media(min-width:1200px){
+    
+}
+
+
+
+
+
